@@ -60,7 +60,8 @@ public class ServiciosController {
         List<QuantityByServiciosDTO>psListDTO = new ArrayList<>();
         for (String[] data: pslista){
             QuantityByServiciosDTO psdto= new QuantityByServiciosDTO();
-            psdto.setQuanttiyByService(Integer.parseInt(data[0]));
+            psdto.setNameServiceDisp(data[0]);
+            psdto.setQuanttiyByServiceDisp(Double.parseDouble(data[1]));
             psListDTO.add(psdto);
         }
         return psListDTO;
