@@ -4,9 +4,12 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.upc.aaw.backend.dtos.ComentariosDTO;
+import pe.edu.upc.aaw.backend.dtos.ComentariosMayor5DTO;
+import pe.edu.upc.aaw.backend.dtos.QuantityByServiciosDTO;
 import pe.edu.upc.aaw.backend.entities.Comentarios;
 import pe.edu.upc.aaw.backend.serviceinterfaces.IComentariosService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
