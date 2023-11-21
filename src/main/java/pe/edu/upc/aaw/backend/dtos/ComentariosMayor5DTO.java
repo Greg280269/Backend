@@ -2,11 +2,22 @@ package pe.edu.upc.aaw.backend.dtos;
 
 public class ComentariosMayor5DTO {
 
-    private int cantidacomentariomayor5;
-    public int getCantidacomentariomayor5() {
-        return cantidacomentariomayor5;
+    String usernameCom;
+    int contador;
+
+    public String getUsernameCom() {
+        return usernameCom;
     }
-    public void setCantidacomentariomayor5(int cantidacomentariomayor5) {
-        this.cantidacomentariomayor5 = cantidacomentariomayor5;
+
+    public void setUsernameCom(String usernameCom) {
+        this.usernameCom = usernameCom;
+    }
+
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
     }
 }
