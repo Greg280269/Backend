@@ -51,4 +51,17 @@ public class ComentariosController {
         return dto;
     }
 
+    @GetMapping("/cantidadComentariosByUser")
+    public List<ComentariosMayor5DTO> CantidadDeServicio(){
+        List<String[]> pslista= icS.ComentarioMayor5();
+        List<ComentariosMayor5DTO>psListDTO = new ArrayList<>();
+        for (String[] data: pslista){
+            ComentariosMayor5DTO psdto= new ComentariosMayor5DTO();
+            psdto.setUsernameCom(data[0]);
+            psdto.setContador(Integer.parseInt(data[1]));
+            psListDTO.add(psdto);
+        }
+        return psListDTO;
+    }
+
 }
